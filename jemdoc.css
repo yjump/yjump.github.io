@@ -151,8 +151,6 @@ h3 {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px 20px;
-  height: 260px;
-  overflow-y: auto;
   box-shadow: var(--shadow);
 }
 
@@ -292,6 +290,12 @@ h3 {
   border-radius: var(--radius-sm);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   display: block;
+}
+
+/* Text-only publication row (no thumbnail) */
+.pub-row td.pub-full {
+  width: auto;
+  border-radius: var(--radius);
 }
 
 .pub-title {
@@ -446,7 +450,7 @@ p {
     width: 160px;
   }
 
-  .pub-row td:first-child {
+  .pub-row td:first-child:not(.pub-full) {
     display: none;
   }
 
